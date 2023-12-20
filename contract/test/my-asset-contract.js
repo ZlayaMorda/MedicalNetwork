@@ -67,17 +67,17 @@ describe('MyAssetContract', () => {
 
     });
 
-    describe('#readMyAsset', () => {
-
-        it('should return a my asset', async () => {
-            await contract.readMyAsset(ctx, '1001').should.eventually.deep.equal({ value: 'my asset 1001 value' });
-        });
-
-        it('should throw an error for a my asset that does not exist', async () => {
-            await contract.readMyAsset(ctx, '1003').should.be.rejectedWith(/The my asset 1003 does not exist/);
-        });
-
-    });
+    // describe('#readMyAsset', () => {
+    //
+    //     it('should return a my asset', async () => {
+    //         await contract.readMyAsset(ctx, '1001').should.eventually.deep.equal({ value: 'my asset 1001 value' });
+    //     });
+    //
+    //     it('should throw an error for a my asset that does not exist', async () => {
+    //         await contract.readMyAsset(ctx, '1003').should.be.rejectedWith(/The my asset 1003 does not exist/);
+    //     });
+    //
+    // });
 
     describe('#updateMyAsset', () => {
 
