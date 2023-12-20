@@ -1,15 +1,15 @@
 {
     "name": "mychannel",
     "version": "1.0.0",
-    "description": "I maede combined",
+    "description": "I made combined",
     "certificateAuthorities": {
         "Org1CA": {
             "caName": "ca",
-            "url": "http://localhost:17050"
+            "url": "http://localhost:7054"
         },
         "Org2CA": {
             "caName": "ca",
-            "url": "http://localhost:17055"
+            "url": "http://localhost:7054"
         }
     },
     "client": {
@@ -46,10 +46,10 @@
     },
     "peers": {
         "Org1Peer1": {
-            "url": "grpc://localhost:17051"
+            "url": "grpc://localhost:7041"
         },
         "Org2Peer1": {
-            "url": "grpc://localhost:17056"
+            "url": "grpc://localhost:7061"
         }
     }
    

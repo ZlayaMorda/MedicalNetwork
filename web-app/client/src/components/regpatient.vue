@@ -11,6 +11,7 @@
                         <li>
                             <label for="fname" class="label" >Name:</label><br>
                             <input type="text"   v-model="patientname"   id="fname" name="patientname" class="inputfield" required><br><br>
+                        </li>
                        
                         <li>
                             <label for="fname" class="label">age:</label><br>

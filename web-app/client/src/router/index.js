@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+// import Vue from 'vue'
+import {createWebHashHistory, createRouter} from 'vue-router'
 import Home from '../views/Home.vue'
 import RegisterPatient from '../views/RegisterPatient.vue'
 import RegisterDoctor from '../views/RegisterDoctor.vue'
@@ -9,9 +9,9 @@ import LoginHospitalAdmin from '../views/LoginHospitalAdmin.vue'
 import PatientDashboard from '../views/PatientDashboard.vue'
 import DoctorDashboard from '../views/DoctorDashboard.vue'
 import HospitalAdminDashboard from '../views/HospitalAdminDashboard'
-Vue.use(VueRouter)
+// Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
@@ -67,10 +67,15 @@ Vue.use(VueRouter)
   }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
-})
+// const router = new VueRouter({
+//   mode: 'history',
+//   base: process.env.BASE_URL,
+//   routes
+// })
 
+const router = createRouter({
+  history: createWebHashHistory(),
+  // base: process.env.BASE_URL,
+  routes,
+})
 export default router

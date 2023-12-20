@@ -1,5 +1,3 @@
-
-
 {
     "connection_file": "final_combined.json",
     "appAdmin_pat": "admin_pat",
@@ -10,4 +8,4 @@
     "caName": "ca.org1.example.com",
     "userName": "V1",
     "gatewayDiscovery": { "enabled": true, "asLocalhost": true }
-  }
+}
